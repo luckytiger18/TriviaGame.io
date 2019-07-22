@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>California Trivia Game</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Shade&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Trivia Questions -->
+    <h1>California Trivia Game!</h1>
+     <!-- counter -->
+     <p id="counter"></p>
+     <p id="content"></p>
+     
+     <button id="start">Start</button>
+    <form>
+        <p id="questionOne">What state borders California to the north?</p>
+        <input type="radio" name="borders" value="mexico"> Mexico<br>
+        <input type="radio" name="borders" value="oregan" id="answerOne"> <label for="m"> Oregan</label><br>
+        <input type="radio" name="borders" value="newYork"> New York<br>
+        <input type="radio" name="borders" value="hawaii"> Hawaii<br>
+        <br>
+        <p id="questionTwo">The center of California is dominated by what major agricultural area?</p>
+        <input type="radio" name="california" value="centralValley" id="answerTwo"> <label for="m"> The Central
+            Valley</label><br>
+        <input type="radio" name="california" value="soCal"> Southern California<br>
+        <input type="radio" name="california" value="noCal"> Northern California<br>
+        <input type="radio" name="california" value="upState"> Upstate California<br>
+        <br>
+        <p id="questionThree">What is California's State Capital?</p>
+        <input type="radio" name="california" value="denver"> Denver<br>
+        <input type="radio" name="california" value="honolulu"> Honolulu<br>
+        <input type="radio" name="california" value="topeka"> Topeka<br>
+        <input type="radio" name="california" value="sacramento" id="answerThree"> <label for="m">
+            Sacramento</label><br>
+        <br>
+        <p id="questionFour">This is California’s state flower.</p>
+        <input type="radio" name="california" value="succulent"> Succulent<br>
+        <input type="radio" name="california" value="daisy"> Daisy<br>
+        <input type="radio" name="california" value="goldenPoppy" id="answerFour"> <label for="m"> Golden
+            Poppy</label><br>
+        <input type="radio" name="california" value="delphinium"> Delphinium<br>
+        <br>
+        <p id="questionFive">California is referred to as the ____ State.</p>
+        <input type="radio" name="california" value="flower"> Flower<br>
+        <input type="radio" name="california" value="golden" id="answerFive"> <label for="m"> Golden</label><br>
+        <input type="radio" name="california" value="sanJoaquin"> San Joaquin<br>
+        <input type="radio" name="california" value="sunshine"> Sunshine<br>
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <!-- jQuery and javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+
+</html>
