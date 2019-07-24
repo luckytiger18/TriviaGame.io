@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>California Trivia Game</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Shade&display=swap"
         rel="stylesheet">
@@ -59,10 +57,14 @@
         <input type="radio" name="goldenState" value="sanJoaquin"> San Joaquin<br>
         <input type="radio" name="goldenState" value="sunshine"> Sunshine<br>
         <!-- Submit button -->
-        <input type="submit" value="Submit">
+        <input id="finishQuiz" type="submit" value="Submit">
 
     </form>
-
+    <div id="results">
+        <div id="correctResults"></div>
+        <div id="incorrectResults"></div>
+       
+    </div>
     <!-- jQuery and javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/javascript/app.js"></script>
