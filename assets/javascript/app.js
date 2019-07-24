@@ -1,29 +1,29 @@
-//When page loads, the first thing you will see is the start button
-
+var counter;
+var timer;
+var playerCorrectAnswers;
+var playerIncorrectAnswers;
 
 $(document).ready(function () {
-    $("#start").on("click", function (counter) {
-    });
+    $("#quiz").hide();
+});
 
+$("#startButton").on("click", function () {
+    counter = 20;
+    timer = setInterval(goDown, 1000);
+    $("#startButton").remove();
+    $("#quiz").show();
+});
 
-
-    //Timer starting at 50 seconds and decrementing to 0
-    var counter = 20
+function goDown() {
+    counter--;
     $("#counterValue").text(counter);
 
-    var timer = setInterval(goDown, 1000);
-
-    function goDown() {
-        counter--;
-        $("#counterValue").text(counter);
-
-        if (counter == 0) {
-            $("input[type='submit']").attr("disabled", true);
-            clearInterval(timer);
-            $("#content").text("Times Up!!")
-        }
+    if (counter == 0) {
+        $("input[type='submit']").attr("disabled", true);
+        clearInterval(timer);
+        $("#content").text("Times Up!!")
     }
-});
+}
 //Radio Button 
 $("input[type='submit']").on('click', function () {
     var ansOne = $("input[name='borders']:checked").val();
@@ -32,34 +32,24 @@ $("input[type='submit']").on('click', function () {
     } else {
         console.log("incorrect")
     }
-});
-$("input[type='submit']").on('click', function () {
     var ansTwo = $("input[name='centralValley']:checked").val();
     if (ansTwo == "centralValley") {
         console.log("correct")
     } else {
         console.log("incorrect")
     }
-});
-
-$("input[type='submit']").on('click', function () {
     var ansThree = $("input[name='capital']:checked").val();
     if (ansThree == "sacramento") {
         console.log("correct")
     } else {
         console.log("incorrect")
     }
-});
-
-$("input[type='submit']").on('click', function () {
     var ansFour = $("input[name='stateFlower']:checked").val();
     if (ansFour == "goldenPoppy") {
         console.log("correct")
     } else {
         console.log("incorrect")
     }
-});
-$("input[type='submit']").on('click', function () {
     var ansFive = $("input[name='goldenState']:checked").val();
     if (ansFive == "golden") {
         console.log("correct")
@@ -68,3 +58,4 @@ $("input[type='submit']").on('click', function () {
     }
     event.preventDefault();
 });
+    
